@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="StructureMap, Version=4.4.1.451, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructureMap.4.4.1\lib\net45\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,6 +52,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WordsMaster.Business\WordsMaster.Business.csproj">
+      <Project>{9a232215-7d80-48cc-800f-867d121e2efe}</Project>
+      <Name>WordsMaster.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WordsMaster.Data\WordsMaster.Data.csproj">
+      <Project>{2db0160e-75cb-4011-92ee-694d35e3b655}</Project>
+      <Name>WordsMaster.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WordsMaster.Domain\WordsMaster.Domain.csproj">
+      <Project>{d25cfb10-47c1-440d-9922-5a284a0bdac0}</Project>
+      <Name>WordsMaster.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
