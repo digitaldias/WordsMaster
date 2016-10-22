@@ -40,8 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\Managers\IProgramFinisher.cs" />
+    <Compile Include="Contracts\Managers\IWordsManager.cs" />
+    <Compile Include="Contracts\Verifiers\IArgumentVerifier.cs" />
+    <Compile Include="Entities\VerificationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
