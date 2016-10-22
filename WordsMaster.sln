@@ -13,8 +13,51 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 Data Layer", "40 Data La
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50 Cross-Cutting Layer", "50 Cross-Cutting Layer", "{8885B3CE-CDDF-4402-9D40-1556F2BDCB5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsMaster", "WordsMaster\WordsMaster.csproj", "{4018E706-6F0B-45A3-B7E1-7776AECC7DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsMaster.Domain", "WordsMaster.Domain\WordsMaster.Domain.csproj", "{D25CFB10-47C1-440D-9922-5A284A0BDAC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsMaster.Business", "WordsMaster.Business\WordsMaster.Business.csproj", "{9A232215-7D80-48CC-800F-867D121E2EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsMaster.Data", "WordsMaster.Data\WordsMaster.Data.csproj", "{2DB0160E-75CB-4011-92EE-694D35E3B655}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsMaster.CrossCutting.UnitTesting", "WordsMaster.CrossCutting.UnitTesting\WordsMaster.CrossCutting.UnitTesting.csproj", "{66452FCB-B403-4E8B-BB1C-8B6C9AB0C686}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4018E706-6F0B-45A3-B7E1-7776AECC7DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4018E706-6F0B-45A3-B7E1-7776AECC7DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4018E706-6F0B-45A3-B7E1-7776AECC7DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4018E706-6F0B-45A3-B7E1-7776AECC7DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25CFB10-47C1-440D-9922-5A284A0BDAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25CFB10-47C1-440D-9922-5A284A0BDAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25CFB10-47C1-440D-9922-5A284A0BDAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25CFB10-47C1-440D-9922-5A284A0BDAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A232215-7D80-48CC-800F-867D121E2EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A232215-7D80-48CC-800F-867D121E2EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A232215-7D80-48CC-800F-867D121E2EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A232215-7D80-48CC-800F-867D121E2EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB0160E-75CB-4011-92EE-694D35E3B655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB0160E-75CB-4011-92EE-694D35E3B655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB0160E-75CB-4011-92EE-694D35E3B655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB0160E-75CB-4011-92EE-694D35E3B655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66452FCB-B403-4E8B-BB1C-8B6C9AB0C686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66452FCB-B403-4E8B-BB1C-8B6C9AB0C686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66452FCB-B403-4E8B-BB1C-8B6C9AB0C686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66452FCB-B403-4E8B-BB1C-8B6C9AB0C686}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4018E706-6F0B-45A3-B7E1-7776AECC7DBA} = {F6F9AF6F-07EA-4A9B-9CBC-97C330DB7DAE}
+		{D25CFB10-47C1-440D-9922-5A284A0BDAC0} = {D2364FCA-92CF-4930-9188-B6107471763B}
+		{9A232215-7D80-48CC-800F-867D121E2EFE} = {44C1B0B3-DE02-43ED-A831-C775C0EA0C3A}
+		{2DB0160E-75CB-4011-92EE-694D35E3B655} = {2A3A7BF2-2446-4099-A6B9-8AF6E9D97B3C}
+		{66452FCB-B403-4E8B-BB1C-8B6C9AB0C686} = {8885B3CE-CDDF-4402-9D40-1556F2BDCB5B}
 	EndGlobalSection
 EndGlobal
