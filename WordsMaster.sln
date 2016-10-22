@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 Presentation Layer", "10 Presentation Layer", "{F6F9AF6F-07EA-4A9B-9CBC-97C330DB7DAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20 Business Layer", "20 Business Layer", "{44C1B0B3-DE02-43ED-A831-C775C0EA0C3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 Domain Layer", "30 Domain Layer", "{D2364FCA-92CF-4930-9188-B6107471763B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 Data Layer", "40 Data Layer", "{2A3A7BF2-2446-4099-A6B9-8AF6E9D97B3C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50 Cross-Cutting Layer", "50 Cross-Cutting Layer", "{8885B3CE-CDDF-4402-9D40-1556F2BDCB5B}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
