@@ -12,7 +12,7 @@ namespace WordsMaster.Data
 {
     public class WordsLoader : IWordsLoader
     {
-        private static string WORDS_FOLDER = @"F:\Dev\Private\WordsMaster\WordsMaster\AllWords";
+        private static string WORDS_FOLDER = @"F:\Dev\Private\WordsMaster\WordsMaster\CreateWordFiles\bin\Release\Test";
         private ConcurrentDictionary<string, List<string>> _allWords;
         private int _wordCount;
 
@@ -58,7 +58,7 @@ namespace WordsMaster.Data
             var stopwatch = Stopwatch.StartNew();
             var result = new Result { Passed = true };
             var directory = new DirectoryInfo(WORDS_FOLDER);
-            var files = directory.GetFiles("? Words.csv");
+            var files = directory.GetFiles("? Words.txt");
 
             LoadWordsFromFilesInParallel(files);
 

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsMaster.Business.UnitTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsMaster.Console", "WordsMaster.Console\WordsMaster.Console.csproj", "{87A506EF-52EA-4688-9834-E9B09D4273C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateWordFiles", "CreateWordFiles\CreateWordFiles.csproj", "{BC4D8D2B-C9D5-491C-B0DA-40D3CF0D0B78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{87A506EF-52EA-4688-9834-E9B09D4273C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A506EF-52EA-4688-9834-E9B09D4273C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A506EF-52EA-4688-9834-E9B09D4273C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4D8D2B-C9D5-491C-B0DA-40D3CF0D0B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4D8D2B-C9D5-491C-B0DA-40D3CF0D0B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4D8D2B-C9D5-491C-B0DA-40D3CF0D0B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4D8D2B-C9D5-491C-B0DA-40D3CF0D0B78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +79,6 @@ Global
 		{66452FCB-B403-4E8B-BB1C-8B6C9AB0C686} = {8885B3CE-CDDF-4402-9D40-1556F2BDCB5B}
 		{CC053CBE-E00C-4508-8844-EB12A6E507ED} = {44C1B0B3-DE02-43ED-A831-C775C0EA0C3A}
 		{87A506EF-52EA-4688-9834-E9B09D4273C2} = {2A3A7BF2-2446-4099-A6B9-8AF6E9D97B3C}
+		{BC4D8D2B-C9D5-491C-B0DA-40D3CF0D0B78} = {F6F9AF6F-07EA-4A9B-9CBC-97C330DB7DAE}
 	EndGlobalSection
 EndGlobal
