@@ -41,7 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\Managers\IProgramFinisher.cs" />
+    <Compile Include="Contracts\Managers\ISubwordsProcessor.cs" />
     <Compile Include="Contracts\Managers\IWordsManager.cs" />
+    <Compile Include="Contracts\Repositories\IResultsWriter.cs" />
+    <Compile Include="Entities\Result.cs" />
+    <Compile Include="Contracts\Repositories\IWordsLoader.cs" />
     <Compile Include="Contracts\Verifiers\IArgumentVerifier.cs" />
     <Compile Include="Entities\VerificationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

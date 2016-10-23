@@ -60,6 +60,10 @@
       <Project>{9a232215-7d80-48cc-800f-867d121e2efe}</Project>
       <Name>WordsMaster.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WordsMaster.Console\WordsMaster.Console.csproj">
+      <Project>{87a506ef-52ea-4688-9834-e9b09d4273c2}</Project>
+      <Name>WordsMaster.Console</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WordsMaster.Data\WordsMaster.Data.csproj">
       <Project>{2db0160e-75cb-4011-92ee-694d35e3b655}</Project>
       <Name>WordsMaster.Data</Name>

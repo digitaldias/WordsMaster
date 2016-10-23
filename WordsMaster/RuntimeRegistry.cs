@@ -1,9 +1,4 @@
 ﻿using StructureMap;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WordsMaster
 {
@@ -16,6 +11,7 @@ namespace WordsMaster
                 x.Assembly("WordsMaster.Business");
                 x.Assembly("WordsMaster.Domain");
                 x.Assembly("WordsMaster.Data");
+                x.Assembly("WordsMaster.Console");
 
                 x.WithDefaultConventions();
             });
