@@ -19,6 +19,7 @@ namespace WordsMaster.Business.UnitTests
         private WordsManager Instance;
         private Mock<IArgumentVerifier> _mock;        
         private Mock<ISubwordsProcessor> _subwordsProcessorMock;
+        private Mock<IWordsLoader> _wordsLoaderMock;
 
         public WordsManagerTests()
         {
@@ -55,33 +56,6 @@ namespace WordsMaster.Business.UnitTests
 
             // Assert
             _wordsLoaderMock.Verify(o => o.LoadAllWords(), Times.Once());
-        }
-
-
-        [Fact]
-        public void Process_LoadsWordsFaile_DoesNotAskToProcess()
-        {
-            // Arrange            
-            SetVerificationToPassButLoadWordsToFail();
-
-            // Act
-            Instance.Process(SomeArguments);
-
-            // Assert
-            _subwordsProcessorMock.Verify(o => o.Process(It.IsAny<string>(), _wordsLoaderMock.Object), Times.Never());
-        }
-
-        [Fact]
-        public void Process_ArgumentsValidAndLoadWordsSuccessful_CallsProcess()
-        {
-            // Arrange            
-            SetVerificationAndLoadWordsToPass();
-
-            // Act
-            Instance.Process(SomeArguments);
-
-            // Assert
-            _subwordsProcessorMock.Verify(o => o.Process(It.IsAny<string>(), _wordsLoaderMock.Object), Times.Once());
         }
 
 

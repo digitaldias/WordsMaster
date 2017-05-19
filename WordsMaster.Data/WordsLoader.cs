@@ -58,7 +58,7 @@ namespace WordsMaster.Data
             var stopwatch = Stopwatch.StartNew();
             var result = new Result { Passed = true };
             var directory = new DirectoryInfo(WORDS_FOLDER);
-            var files = directory.GetFiles("? Words.txt");
+            var files = directory.GetFiles("? Words.csv");
 
             LoadWordsFromFilesInParallel(files);
 

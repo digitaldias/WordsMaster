@@ -20,7 +20,7 @@ namespace WordsMaster
 
         private static void DisplayCopyRight()
         {
-            System.Console.WriteLine("\nWORDSMASTER v" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + "\n2016 - digitaldias\n\n");        
+            System.Console.WriteLine($"\nWORDSMASTER v" + Assembly.GetExecutingAssembly().GetName().Version.ToString() + $"\n2016-{DateTime.Now.Year} - digitaldias\n\n");        
         }
     }
 }
