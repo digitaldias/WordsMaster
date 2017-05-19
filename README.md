@@ -1,24 +1,19 @@
 
 # WordsMaster.Exe
-Sample program to show parallell execution using files. The program takes one parameter, the "subword" to find, then looks up all English words that contain this subword
-and removes the subword from it. If the remaining characters still form a valid English word, the output is displayed. Original idea from a meme like this:  
-
+I once saw a meme online that went something like this: 
 <center>
 
 ![Words to the vise](opinion.jpg)
 
 </center>
 
-## Setting it up
-- Make sure you have Visual Studio installed. Any version will do
-- Clone this repository to your computer, open it, and compile the code (debug/release)
-- in a command prompt, go to the bin/Debug (or bin/Release) folder, and type, for example,  **WordsMaster lad**
-- The code comes with a ready made list of English words, however, if you can find a more extensive list, you can use the project **CreateWordFiles** to put them into the expected form.
+I figured, it'd be easy to implement as a code challenge. All I have to do is to get a list of every single English word in the dictionary, discover all words that contain the subword (in the above example, all English words containing 'pi') and then *remove* the sub-word 'pi' from it to see if what remains *also* exists in the English dictionary. 
 
+This requires some smart thinking in order to prevent sluggish code, so I wrote this small console application 
+to demonstrate **parallel** execution in C#. It's a nice exercise for burning away an hour or so :)
+You can find a more complete list of English words [here](https://github.com/dwyl/english-words)
 
-
-
-Sample use: 
+### Sample use: 
 
 ```
 F:\Dev\Private\WordsMaster\bin\Release> WordsMaster.exe lad
@@ -42,6 +37,14 @@ overladed:overed         overlading:overing       paladin:pain             palad
 Output written in 1ms
 Program finished.
 ```
+
+## Setting it up
+- Make sure you have Visual Studio installed. Any version will do
+- Clone this repository to your computer, open it, and compile the code (debug/release)
+- in a command prompt, go to the bin/Debug (or bin/Release) folder, and type, for example,  **WordsMaster lad**
+- The code comes with a ready made list of English words, however, if you can find a more extensive list, you can use the project **CreateWordFiles** to put them into the expected form.
+
+
 Gives back a complete list of English words that contain "lad" and still is a valid english word once "lad" is removed (i.e. "Paladin" : "Pain")
 
 >**NOTE<br />**
