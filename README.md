@@ -1,13 +1,21 @@
-![Words to the vise](opinion.jpg)
+
 # WordsMaster.Exe
 Sample program to show parallell execution using files. The program takes one parameter, the "subword" to find, then looks up all English words that contain this subword
-and removes the subword from it. If the remaining characters still form a valid English word, the output is displayed. 
+and removes the subword from it. If the remaining characters still form a valid English word, the output is displayed. Original idea from a meme like this:  
+
+<center>
+
+![Words to the vise](opinion.jpg)
+
+</center>
 
 ## Setting it up
 - Make sure you have Visual Studio installed. Any version will do
 - Clone this repository to your computer, open it, and compile the code (debug/release)
 - in a command prompt, go to the bin/Debug (or bin/Release) folder, and type, for example,  **WordsMaster lad**
 - The code comes with a ready made list of English words, however, if you can find a more extensive list, you can use the project **CreateWordFiles** to put them into the expected form.
+
+
 
 
 Sample use: 
