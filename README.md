@@ -1,3 +1,4 @@
+![Words to the vise](opinion.jpg)
 # WordsMaster.Exe
 Sample program to show parallell execution using files. The program takes one parameter, the "subword" to find, then looks up all English words that contain this subword
 and removes the subword from it. If the remaining characters still form a valid English word, the output is displayed. 
