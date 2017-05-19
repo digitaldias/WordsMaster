@@ -12,7 +12,7 @@ namespace WordsMaster.Data
 {
     public class WordsLoader : IWordsLoader
     {
-        private static string WORDS_FOLDER = @"F:\Dev\Private\WordsMaster\WordsMaster\CreateWordFiles\bin\Release\Test";
+        private static string WORDS_FOLDER = @"..\..\..\AllWords";
         private ConcurrentDictionary<string, List<string>> _allWords;
         private int _wordCount;
 
